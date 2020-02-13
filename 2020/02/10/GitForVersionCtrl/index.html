@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>基于Hexo部署个人博客 - Hexo</title>
+  <title>使用 Git 管理项目-初始化 - Hexo</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,22 +12,26 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="如果你是一个不甘寂寞的程序猿（媛），是否也想要搭建一个属于自己的个人网站呢？如果正有这样的想法，请跟随这篇文章发挥你的Geek精神，快速拥有自己的博客网站，写文章记录生活，享受这种从0到1的过程。">
+  <meta name="description" content="Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于Hexo部署个人博客">
-<meta property="og:url" content="http://49.234.9.195/2020/02/10/BuildBlogbyHexo/index.html">
+<meta property="og:title" content="使用 Git 管理项目-初始化">
+<meta property="og:url" content="http://49.234.9.195/2020/02/10/GitForVersionCtrl/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="如果你是一个不甘寂寞的程序猿（媛），是否也想要搭建一个属于自己的个人网站呢？如果正有这样的想法，请跟随这篇文章发挥你的Geek精神，快速拥有自己的博客网站，写文章记录生活，享受这种从0到1的过程。">
+<meta property="og:description" content="Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/peidzzz/MyImageRepo@master/image/UseGitForVersionCtrl/1581570214644.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/peidzzz/MyImageRepo@master/image/UseGitForVersionCtrl/1581570772175.png">
 <meta property="article:published_time" content="2020-02-10T07:03:06.000Z">
-<meta property="article:modified_time" content="2020-02-13T04:53:44.650Z">
+<meta property="article:modified_time" content="2020-02-13T05:31:10.136Z">
 <meta property="article:author" content="Dylan Pei">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="VersionControl">
+<meta property="article:tag" content="分布式">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/peidzzz/MyImageRepo@master/image/UseGitForVersionCtrl/1581570214644.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/css/style.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1581587217795">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1581587217842">-->
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -147,17 +151,17 @@
       <div class="nexmoe-post-cover" 
           style="padding-bottom: 56.25%;"
       > 
-          <img data-src="https://cdn.jsdelivr.net/gh/peidzzz/MyImageRepo@master/image/BuildBlogbyHexo/background.jpg" data-sizes="auto" alt="基于Hexo部署个人博客" class="lazyload">
-          <h1>基于Hexo部署个人博客</h1>
+          <img data-src="https://cdn.jsdelivr.net/gh/peidzzz/MyImageRepo@master/image/UseGitForVersionCtrl/background.jpg" data-sizes="auto" alt="使用 Git 管理项目-初始化" class="lazyload">
+          <h1>使用 Git 管理项目-初始化</h1>
       </div>
   
   <div class="nexmoe-post-meta">
     <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月10日</a>
-    <a><i class="nexmoefont icon-areachart"></i>515 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>597 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
     
     
-      <a class="nexmoefont icon-tag-fill -link" href="/tags/Blog/" rel="tag">Blog</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/Hexo/" rel="tag">Hexo</a>
+      <a class="nexmoefont icon-tag-fill -link" href="/tags/Git/" rel="tag">Git</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/VersionControl/" rel="tag">VersionControl</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" rel="tag">分布式</a>
     
     
   </div>
@@ -167,7 +171,7 @@
       <div class="nexmoe-fixed">
         <div class="nexmoe-valign">
             <div class="nexmoe-toc">
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前情提要"><span class="toc-number">1.</span> <span class="toc-text">前情提要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是-Hexo？"><span class="toc-number">1.0.1.</span> <span class="toc-text">什么是 Hexo？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装前提"><span class="toc-number">1.0.2.</span> <span class="toc-text">安装前提</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Node-js"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Git"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">安装Git</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Hexo"><span class="toc-number">2.</span> <span class="toc-text">安装Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#命令行安装"><span class="toc-number">2.0.1.</span> <span class="toc-text">命令行安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开始使用"><span class="toc-number">2.0.2.</span> <span class="toc-text">开始使用</span></a></li></ol></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#获取Git仓库"><span class="toc-number">1.</span> <span class="toc-text">获取Git仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Git-init"><span class="toc-number">1.1.</span> <span class="toc-text">Git init</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git-clone"><span class="toc-number">1.2.</span> <span class="toc-text">Git clone</span></a></li></ol></li></ol>
             </div>
         </div>
       </div>
@@ -175,33 +179,35 @@
   </div>
 
   <article>
-    <p>如果你是一个不甘寂寞的程序猿（媛），是否也想要搭建一个属于自己的个人网站呢？如果正有这样的想法，请跟随这篇文章发挥你的Geek精神，快速拥有自己的博客网站，写文章记录生活，享受这种从0到1的过程。</p>
+    <p>Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p>
 <a id="more"></a>
 
-<h1 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h1><h3 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
-<ul>
-<li><p><a href="http://nodejs.org/" target="_blank" rel="noopener">Node.js</a> (Node.js 版本需不低于 8.10，建议使用 Node.js 10.0 及以上版本)</p>
-</li>
-<li><p>Git</p>
-</li>
-</ul>
-<p>如果您的电脑中已经安装上述必备程序，那么恭喜您！你可以直接前往 <a href="https://hexo.io/zh-cn/docs/#%E5%AE%89%E8%A3%85-Hexo" target="_blank" rel="noopener">安装 Hexo</a> 步骤。</p>
-<p>如果您的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p>
-<h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h4><p>Hexo基于Node.js，Node.js下载地址：Download | Node.js 下载安装包，注意安装Node.js会包含环境变量及npm的安装。检测Node.js是否安装成功，在命令行中输入 <code>node -v</code>：返回版本号证明安装成功。</p>
-<h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p>什么是Git ?简单来说Git是开源的分布式版本控制系统，用于敏捷高效地处理项目。我们网站在本地搭建好了，需要使用Git同步到GitHub上。从Git官网下载：<a href="https://link.zhihu.com/?target=https%3A//git-scm.com/download/win">Git - Downloading Package</a>  选择安装包，下载后安装，在命令行里输入 <code>git</code> 测试是否安装成功，若安装失败，参看其他详细的Git安装教程。</p>
-<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><h3 id="命令行安装"><a href="#命令行安装" class="headerlink" title="命令行安装"></a>命令行安装</h3><p>所有必备的应用程序安装完成后，即可使用 <code>npm</code> 命令安装<code>Hexo</code>。<br><code>npm install -g hexo-cli</code></p>
-<h3 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h3><p>安装 Hexo 完成后，执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
-<pre><code>hexo init &lt;folder&gt;
-cd &lt;folder&gt;
-npm install</code></pre>
+<h2 id="获取Git仓库"><a href="#获取Git仓库" class="headerlink" title="获取Git仓库"></a>获取Git仓库</h2><p>获取Git仓库的方式主要分为两种。第一种是在现有项目或目录下导入所有文件到 Git 中，使用<code>git init</code>；第二种是从一个服务器克隆一个现有的 Git 仓库，使用<code>git clone</code>。</p>
+<h3 id="Git-init"><a href="#Git-init" class="headerlink" title="Git init"></a>Git init</h3><p>首先在现有的项目目录下打开命令行cmd，输入：<code>git init</code></p>
+<p><img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/peidzzz/MyImageRepo@master/image/UseGitForVersionCtrl/1581570214644.png" alt="1581570214644" class="lazyload"></p>
+<p>这样就简单将你的目录转变成一个Git仓库。该命令将创建一个名为 <code>.git</code>的子目录，这个子目录含有你初始化的 Git 仓库中所有的必须文件，这些文件是 Git 仓库的骨干。</p>
+<p>如果你是在一个已经存在文件的文件夹（而不是空文件夹）中初始化 Git 仓库来进行版本控制的话，你应该开始跟踪这些文件并提交。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git add . &#x2F;&#x2F;.是将目录的所有文件都添加（不包括空文件夹）</span><br><span class="line">$ git commit -m &#39;first commit&#39; &#x2F;&#x2F;提交修改（&#39;first commit&#39;为注释信息）</span><br></pre></td></tr></table></figure>
+
+<p>此时可以使用<code>git status</code>来查看当前文件状态。<br>我们还可以将项目加入到远程Git仓库：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin https:&#x2F;&#x2F;github.com&#x2F;YourName&#x2F;YourRepo.git &#x2F;&#x2F;加入到远程的Git仓库</span><br><span class="line">$ git push -u origin master &#x2F;&#x2F;将项目推到Git仓库</span><br></pre></td></tr></table></figure>
+
+<p>这样我们就可以实现项目的远程操作。</p>
+<h3 id="Git-clone"><a href="#Git-clone" class="headerlink" title="Git clone"></a>Git clone</h3><p>当远程Git仓库已经存在一个项目时，需要对此项目进行操作；或者有一个你想为此贡献自己一份力的开源项目时，就需要用到<code>git clone</code>。当你执行<code>git clone</code>命令的时候，默认配置下远程 Git 仓库中的每一个文件的每一个版本都将被拉取下来。</p>
+<p><img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/peidzzz/MyImageRepo@master/image/UseGitForVersionCtrl/1581570772175.png" alt="1581570214644" class="lazyload"></p>
+<p>克隆仓库的命令格式为<code>$ git clone [url]</code>。例如，要克隆 Git 的可链接库 YourRepo，可以用下面的命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;YourName&#x2F;YourRepo.git Folder &#x2F;&#x2F;将项目克隆到Folder</span><br></pre></td></tr></table></figure>
+
+<p>这将执行与上一个命令相同的操作，不过在本地创建的仓库名字变为 Folder。</p>
+<p>Git 支持多种数据传输协议。上面的例子使用的是<code>https://</code>传输协议，当然也可以使用<code>SSH</code>协议。</p>
+
   </article>
   
     
 <div class="nexmoe-post-copyright">
 <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
 <strong>Author：</strong>Dylan Pei<br>
-<strong>Link：</strong><a href="http://49.234.9.195/2020/02/10/BuildBlogbyHexo/" title="http:&#x2F;&#x2F;49.234.9.195&#x2F;2020&#x2F;02&#x2F;10&#x2F;BuildBlogbyHexo&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;49.234.9.195&#x2F;2020&#x2F;02&#x2F;10&#x2F;BuildBlogbyHexo&#x2F;</a><br>
+<strong>Link：</strong><a href="http://49.234.9.195/2020/02/10/GitForVersionCtrl/" title="http:&#x2F;&#x2F;49.234.9.195&#x2F;2020&#x2F;02&#x2F;10&#x2F;GitForVersionCtrl&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;49.234.9.195&#x2F;2020&#x2F;02&#x2F;10&#x2F;GitForVersionCtrl&#x2F;</a><br>
 
   <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
 
@@ -215,7 +221,7 @@ npm install</code></pre>
 </script>
 <!-- 畅言公共 js 代码 end -->
 <!--PC和WAP自适应版-->
-<div id="SOHUCS" sid="2020/02/10/BuildBlogbyHexo/"></div>
+<div id="SOHUCS" sid="2020/02/10/GitForVersionCtrl/"></div>
 <script>
 (function(){
 var appid = '&lt;APP_ID&gt;';
@@ -230,7 +236,7 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" src="http
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1581587217799"></script>-->
+<!--<script src="/js/app.js?v=1581587217844"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
